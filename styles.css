@@ -1,0 +1,87 @@
+html {
+    z-index: 10;
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/03/horizon-landscape-mountain-peak-4k_1551643328.jpg);
+    background-size: 100%;
+}
+header {
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 10px 10px black;
+    overflow: hidden;
+    text-align: center;
+    font-size: 100px;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    white-space: nowrap;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.text {
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 5px 5px black;
+}
+
+.moves {
+    position: relative;
+    top: 15%;
+    display: flex;  
+    justify-content: center;
+    align-content: center;
+}
+.moves:hover {
+    cursor:pointer;
+}
+#playerScore {
+    position: absolute;
+    top: 25%;
+    left: 2%; 
+    font-size: 70px;
+}
+#result {
+    font-size: 70px;
+    text-align: center;
+    white-space: pre-line;
+
+}
+#computerScore {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    font-size: 70px;
+
+}
+#rock {
+    background-image: url(https://jowaynejosephs.github.io/Rock-Paper-Scissors/img/rock.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+#paper {
+    background-image: url(https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+#scissors {
+    background-image: url(https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
